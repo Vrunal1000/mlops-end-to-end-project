@@ -1,0 +1,13 @@
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://github.com/entbappy/Branching-tutorial/raw/master/winequality-data.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir : artifacts/data_ingestion
+
+
+# In source_url we can also give url of your repo. 
+# Upload a zip file of winequality-data in your github repo then click on that zip file in repo.
+# right click on "view raw" option and then copy the link , that link we can paste in "source_url"
