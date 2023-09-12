@@ -21,7 +21,7 @@ class DataIngestion:
             )
             logger.info(f"{filename} download! with the following info: \n {headers}")
         else:
-            logger.info(f"File already exists of size: {get_size(Path(self.config.loacl_data_file))}")
+            logger.info(f"File already exists of size: {get_size(Path(self.config.local_data_file))}")
             
     def extract_zip_file(self):
         """

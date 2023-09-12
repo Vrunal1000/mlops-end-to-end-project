@@ -13,6 +13,20 @@ data_validation:
   unzip_data_dir : artifacts/data_ingestion/winequality-red.csv
   status_file : artifacts/data_validation/status.txt
 
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_ingestion/winequality-red.csv
+
+model_trainer:
+  root_dir: artifacts/model_trainer
+  train_data_path: artifacts/data_transformation/train.csv
+  test_data_path: artifacts/data_transformation/test.csv
+  model_name: model.joblib 
+
+# data_transformation:
+#   root_dir: artifacts/data_transformation
+#   data_path: artifacts/data_ingestion/winequality-red.csv
+
 # In source_url we can also give url of your repo. 
 # Upload a zip file of winequality-data in your github repo then click on that zip file in repo.
 # right click on "view raw" option and then copy the link , that link we can paste in "source_url"
